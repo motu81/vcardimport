@@ -175,13 +175,14 @@ function fastCardChk ()
 
 }
 
-
-if [ $# -lt 1 ]
+if [ $# -ne 1 ]
 then
 	usage
 	requirementCheck
 	exit 1
 fi
+
+requirementCheck
 
 file="$1"
 if [ ! -f "${file}" ]
