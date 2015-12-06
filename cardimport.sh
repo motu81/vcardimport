@@ -53,9 +53,9 @@ function usage ()
 {
 	echo Usage: $0 Contacts.vcf
 	echo Be sure you have correctly changed variable on the begining of $0
-	echo Please note, this script will not check against duplicate vcard AND generate a new UID for every VCARD.
+	echo Please note, this script will not check against duplicate vCard AND generate a new UID for every vCard.
 }
-exit 
+
 if [ $# -lt 1 ]
 then
 	usage
