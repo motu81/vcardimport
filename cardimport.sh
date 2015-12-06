@@ -56,21 +56,6 @@ function usage ()
 	echo Please note, this script will not check against duplicate vCard AND generate a new UID for every vCard.
 }
 
-if [ $# -lt 1 ]
-then
-	usage
-	requirementCheck
-	exit 1
-fi
-
-file="$1"
-if [ ! -f "${file}" ]
-then
-	echo "ERROR: ${file} not found."
-	usage
-	exit 2
-fi
-
 # generate an uuid -v4 using pure bash
 function uuidBash ()
 {
@@ -189,6 +174,22 @@ function fastCardChk ()
 	fi
 
 }
+
+
+if [ $# -lt 1 ]
+then
+	usage
+	requirementCheck
+	exit 1
+fi
+
+file="$1"
+if [ ! -f "${file}" ]
+then
+	echo "ERROR: ${file} not found."
+	usage
+	exit 2
+fi
 
 # first, check VCARD consistent
 fastCardChk
