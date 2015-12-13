@@ -13,7 +13,7 @@
 
 # your user name, if you have a ':' in it, change your login or find an other script as it will not work with this script
 user='username'
-# your password, theoricly any character are allowed, even ':' or '@'
+# your password, theoretically any character are allowed, even ':' or '@'
 pass='YourSuperPassword'
 # name of the collection
 cardsCollection='contacts'
